@@ -13,6 +13,7 @@ The change directory command is used to navigate through the directories in the 
 * **Error** No Error
 
 2. Directory Arguments
+   
 ![Image](cd_directoryarg.png)
 
 * **Working Directory** : `/home/`
@@ -20,6 +21,7 @@ The change directory command is used to navigate through the directories in the 
 * **Error** : No Error
 
 3. File Path Arguments
+   
 ![Image](cd_filearg.png)
 
 * **Working Directory** : `/home/lecture1/messages`
@@ -31,7 +33,8 @@ The change directory command is used to navigate through the directories in the 
 The list directory contents command is used to display the contents of the directory in terminal. 
 
 1. No Arguments
-![Image](ls_noargs.png)
+   
+ ![Image](ls_noargs.png)
 
 * **Working Directory** : `/home/lecture1/messages`
 * **Function/OutPut** : Utilizing the command without a file or directory arguement produces `en-us.txt es-mx.txt ja.txt zh-cn.txt`. The output is the names of the files in the current working directory. 
@@ -39,14 +42,16 @@ The list directory contents command is used to display the contents of the direc
 
 
 2. Directory Arguments
-![Image](ls_directoryarg.png)
+   
+ ![Image](ls_directoryarg.png)
 
 * **Working Directory** : `/home/`
 * **Function/OutPut** : Utilizing the command with a directory arguement produces `Hello.class Hello.java messages README`. The output is the names of the files in the inputted working directory. The messages is bolded because it is a directory.  
 * **Error** : No Error.
 
-3. File Path Arguments
-![Image](ls_filearg.png)
+3. File Path Argument
+   
+ ![Image](ls_filearg.png)
 
 * **Working Directory** : `/home/`
 * **Function/OutPut** : Utilizing the command with a file arguement produces `Hello.java`. The output is the name of the file input as the arguement.  
@@ -57,20 +62,23 @@ The list directory contents command is used to display the contents of the direc
 The concatenates and display file contents command is used to display the contents of the directory in terminal. 
 
 1. No Arguments
-![Image](cat_noarg.png)
+   
+ ![Image](cat_noarg.png)
 
 * **Working Directory** : `/home/`
 * **Function/OutPut** : Utilizing the command without a directory or file arguement causes the terminal to repeat the user's input after the command has run. To exit this function, the user must input `CTRL+C`. The terminal functions like this because it is not how the cat command is intended to be used.  
 * **Error** : No Error.
   
 2. Directory Arguments
-![Image](cat_directoryarg.png)
+   
+ ![Image](cat_directoryarg.png)
 
 * **Working Directory** : `/home/`
 * **Function/OutPut** : Utilizing the command with a directory arguement produces `cat: lecture1: Is a directory`. 
 * **Error** : The output `cat: lecture1: Is a directory` is an error because the command is a directory but the command is intended to be used on a file.
 
 3. File Path Arguments
+   
 ![Image](cat_filearg.png)
 
 * **Working Directory** : `/home/lecture1/`
