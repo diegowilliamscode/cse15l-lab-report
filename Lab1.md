@@ -34,7 +34,7 @@ The list directory contents command is used to display the contents of the direc
 
 1. No Arguments
    
- ![Image](ls_noargs.png)
+ ![Image](ls_noarg.png)
 
 * **Working Directory** : `/home/lecture1/messages`
 * **Function/OutPut** : Utilizing the command without a file or directory arguement produces `en-us.txt es-mx.txt ja.txt zh-cn.txt`. The output is the names of the files in the current working directory. 
@@ -59,7 +59,7 @@ The list directory contents command is used to display the contents of the direc
 
 ## 'cat' Command (Concatenate and Display File Content)
 
-The concatenates and display file contents command is used to display the contents of the directory in terminal. 
+The concatenates and display file contents command is used to display the contents of the file in terminal. 
 
 1. No Arguments
    
