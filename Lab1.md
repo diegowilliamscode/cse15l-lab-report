@@ -4,7 +4,7 @@
 
 The change directory command is used to navigate through the directories in the file system using the terminal.
 
-1. No Arguments
+1. **No Arguments**
    
 ![Image](cd_noarg.png).
 
@@ -12,7 +12,7 @@ The change directory command is used to navigate through the directories in the 
 * **Function/OutPut** Utilizing the command without a file or directory arguement changes the working directory to the home directory of the user, but produces no output.
 * **Error** No Error
 
-2. Directory Arguments
+2. **Directory Arguments**
    
 ![Image](cd_directoryarg.png)
 
@@ -20,7 +20,7 @@ The change directory command is used to navigate through the directories in the 
 * **Function/OutPut** : Utilizing the command with a directory arguement changes the working directory changes to the directory that the user input in this case from `/home` to `/home/lecture1`, but produces no output.
 * **Error** : No Error
 
-3. File Path Arguments
+3. **File Path Arguments**
    
 ![Image](cd_filearg.png)
 
@@ -32,7 +32,7 @@ The change directory command is used to navigate through the directories in the 
 
 The list directory contents command is used to display the contents of the directory in terminal. 
 
-1. No Arguments
+1. **No Arguments**
    
  ![Image](ls_noarg.png)
 
@@ -41,7 +41,7 @@ The list directory contents command is used to display the contents of the direc
 * **Error** : No Error.
 
 
-2. Directory Arguments
+2. **Directory Arguments**
    
  ![Image](ls_directoryarg.png)
 
@@ -49,7 +49,7 @@ The list directory contents command is used to display the contents of the direc
 * **Function/OutPut** : Utilizing the command with a directory arguement produces `Hello.class Hello.java messages README`. The output is the names of the files in the inputted working directory. The messages is bolded because it is a directory.  
 * **Error** : No Error.
 
-3. File Path Argument
+3. **File Path Argument**
    
  ![Image](ls_filearg.png)
 
@@ -61,7 +61,7 @@ The list directory contents command is used to display the contents of the direc
 
 The concatenates and display file contents command is used to display the contents of the file in terminal. 
 
-1. No Arguments
+1. **No Arguments**
    
  ![Image](cat_noarg.png)
 
@@ -69,7 +69,7 @@ The concatenates and display file contents command is used to display the conten
 * **Function/OutPut** : Utilizing the command without a directory or file arguement causes the terminal to repeat the user's input after the command has run. To exit this function, the user must input `CTRL+C`. 
 * **Error** : The terminal functions like this because it is not how the cat command is intended to be used.
   
-2. Directory Arguments
+2. **Directory Arguments**
    
  ![Image](cat_directoryarg.png)
 
@@ -77,7 +77,7 @@ The concatenates and display file contents command is used to display the conten
 * **Function/OutPut** : Utilizing the command with a directory arguement produces `cat: lecture1: Is a directory`. 
 * **Error** : The output `cat: lecture1: Is a directory` is an error because the command is a directory but the command is intended to be used on a file.
 
-3. File Path Arguments
+3. **File Path Arguments**
    
 ![Image](cat_filearg.png)
 
