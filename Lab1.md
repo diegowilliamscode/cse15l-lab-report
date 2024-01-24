@@ -10,7 +10,7 @@ The change directory command is used to navigate through the directories in the 
 
 * **Working Directory** : `/home/lecture1/`
 * **Function/OutPut** Utilizing the command without a file or directory arguement changes the working directory to the home directory of the user, but produces no output.
-* **Error** No Error
+* **Error** No Error.
 
 2) **Directory Arguments**
    
@@ -18,7 +18,7 @@ The change directory command is used to navigate through the directories in the 
 
 * **Working Directory** : `/home/`
 * **Function/OutPut** : Utilizing the command with a directory arguement changes the working directory changes to the directory that the user input in this case from `/home` to `/home/lecture1`, but produces no output.
-* **Error** : No Error
+* **Error** : No Error.
 
 3) **File Path Arguments**
    
