@@ -5,7 +5,8 @@
 The change directory command is used to navigate through the directories in the file system using the terminal.
 
 1. No Arguments
-![Image](cd_noarg.png)
+   
+![Image](cd_noarg.png).
 
 * **Working Directory** : `/home/lecture1/`
 * **Function/OutPut** Utilizing the command without a file or directory arguement changes the working directory to the home directory of the user, but produces no output.
