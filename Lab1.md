@@ -1,6 +1,6 @@
 # Lab 1
 
-## 'cd' Command (Change Directory)
+## `cd` Command (Change Directory)
 
 The change directory command is used to navigate through the directories in the file system using the terminal.
 
@@ -28,7 +28,7 @@ The change directory command is used to navigate through the directories in the 
 * **Function/OutPut** : Utilizing the command with a file arguement produces `bash: cd: Hello.java: Not a directory` and does not do anything with this file. 
 * **Error** : The command throws an error `bash: cd: Hello.java: Not a directory` because it only functions with directories.
 
-## 'ls' Command (List Directory Contents)
+## `ls` Command (List Directory Contents)
 
 The list directory contents command is used to display the contents of the directory in terminal. 
 
@@ -57,7 +57,7 @@ The list directory contents command is used to display the contents of the direc
 * **Function/OutPut** : Utilizing the command with a file arguement produces `Hello.java`. The output is the name of the file input as the arguement.  
 * **Error** : No Error.
 
-## 'cat' Command (Concatenate and Display File Content)
+## `cat` Command (Concatenate and Display File Content)
 
 The concatenates and display file contents command is used to display the contents of the file in terminal. 
 
@@ -66,8 +66,8 @@ The concatenates and display file contents command is used to display the conten
  ![Image](cat_noarg.png)
 
 * **Working Directory** : `/home/`
-* **Function/OutPut** : Utilizing the command without a directory or file arguement causes the terminal to repeat the user's input after the command has run. To exit this function, the user must input `CTRL+C`. The terminal functions like this because it is not how the cat command is intended to be used.  
-* **Error** : No Error.
+* **Function/OutPut** : Utilizing the command without a directory or file arguement causes the terminal to repeat the user's input after the command has run. To exit this function, the user must input `CTRL+C`. 
+* **Error** : The terminal functions like this because it is not how the cat command is intended to be used.
   
 2. Directory Arguments
    
