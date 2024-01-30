@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 class Handler implements URLHandler {
     public String handleRequest(URI url) {
-        ArrayList<String> chats = new ArrayList<>();
+        String[] chats = new String[1000];
         if (url.getPath().contains("/add-message")) {
             String[] parameters = url.getQuery().split("&");
             String user = "";
@@ -20,10 +20,7 @@ class Handler implements URLHandler {
             }
             String chatMessage = user + ": " + message;
             chats.add(chatMessage);
-            for(String chat : chats){
-                System.out.println(chat);
-            }
-            return " ";
+            return chats;
         }else{
             return "404 Message NOt Found";
         }
