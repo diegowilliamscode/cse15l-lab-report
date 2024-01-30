@@ -16,15 +16,11 @@ class Handler implements URLHandler {
                 } else if (keyValue[0].equals("s")) {
                     message = keyValue[1];
                 }
-        }
         String chatMessage = user + ": " + message;
-        String response = "";
-        chats.add(chatMessage);
-        for (String chat : chats) {
-            response += msg + "\n";
-        }
         return response;
-            
+        }else{
+            return "404 Message NOt Found";
+  
 }
 
 class ChatServer {
