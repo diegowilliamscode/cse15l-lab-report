@@ -22,7 +22,8 @@ class Handler implements URLHandler {
             chats.add(chatMessage);
             for(String chat : chats){
                 System.out.println(chat);
-                return " ";
+            }
+            return " ";
         }else{
             return "404 Message NOt Found";
         }
