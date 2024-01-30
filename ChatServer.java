@@ -17,6 +17,7 @@ class Handler implements URLHandler {
                 } else if (keyValue[0].equals("s")) {
                     message = keyValue[1];
                 }
+            }
             String chatMessage = user + ": " + message;
             return response;
         }else{
