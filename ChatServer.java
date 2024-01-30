@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.net.URI;
+import java.util.ArrayList;
 
 ArrayList<String> chats = new ArrayList<>();
 
@@ -21,6 +22,8 @@ class Handler implements URLHandler {
         }else{
             return "404 Message NOt Found";
         }
+    }
+
 }
 
 class ChatServer {
