@@ -19,7 +19,8 @@ class Handler implements URLHandler {
                 }
             }
             String chatMessage = user + ": " + message;
-            return response;
+            chats.add(chatMessage);
+            return chatMessage;
         }else{
             return "404 Message NOt Found";
         }
