@@ -20,7 +20,7 @@ class Handler implements URLHandler {
             }
             String chatMessage = user + ": " + message;
             chats.add(chatMessage);
-            for(String chat in chats){
+            for(String chat : chats){
                 System.out.println(chat);
                 return " ";
         }else{
