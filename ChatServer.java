@@ -2,10 +2,10 @@ import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
 
-ArrayList<String> chats = new ArrayList<>();
 
 class Handler implements URLHandler {
     public String handleRequest(URI url) {
+        ArrayList<String> chats = new ArrayList<>();
         if (url.getPath().contains("/add-message")) {
             String[] parameters = url.getQuery().split("&");
             String user = "";
