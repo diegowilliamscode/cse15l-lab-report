@@ -8,14 +8,17 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().contains("/add-message")) {
-            String[] parameters = url.getQuery().split("=");
-            if (parameters[0].equals("s")) {
-                    list.add(parameters[1]);
-                    return;
+            String[] parameters = url.getQuery().split("&");
+            String user = "";
+            String message = "";
+            for (String parameter : parameters) {
+                String[] keyValue = parameter.split("=");
+                if (keyValue[0].equals("user")) {
+                    user = keyValue[1];
+                } else if (keyValue[0].equals("s")) {
+                    message = keyValue[1];
                 }
             }
-            return "404 Not Found!";
-        }
 }
 
 class ChatServer {
