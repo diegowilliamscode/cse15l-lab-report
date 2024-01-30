@@ -1,11 +1,11 @@
-import java.io.IOException;
+import java.io.*;
 import java.net.URI;
 import java.util.ArrayList;
 
 
 class Handler implements URLHandler {
+    ArrayList<String> chats = new ArrayList<>();
     public String handleRequest(URI url) {
-        String[] chats = new String[100];
         if (url.getPath().contains("/add-message")) {
             String[] parameters = url.getQuery().split("&");
             String user = "";
@@ -20,7 +20,11 @@ class Handler implements URLHandler {
             }
             String chatMessage = user + ": " + message;
             chats.append(chatMessage);
-            return chats;
+            String response = "";
+            for (String chat : chats) {
+                response += chat + "\n";
+            }
+            return response;
         }else{
             return "404 Message NOt Found";
         }
