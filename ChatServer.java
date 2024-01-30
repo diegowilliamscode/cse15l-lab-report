@@ -1,6 +1,8 @@
 import java.io.IOException;
 import java.net.URI;
 
+ArrayList<String> chats = new ArrayList<>();
+
 class Handler implements URLHandler {
     public String handleRequest(URI url) {
         if (url.getPath().contains("/add-message")) {
@@ -14,7 +16,15 @@ class Handler implements URLHandler {
                 } else if (keyValue[0].equals("s")) {
                     message = keyValue[1];
                 }
-            }
+        }
+        String chatMessage = user + ": " + message;
+        String response = "";
+        chats.add(chatMessage);
+        for (String chat : chats) {
+            response += msg + "\n";
+        }
+        return response;
+            
 }
 
 class ChatServer {
