@@ -1,8 +1,8 @@
-*`ChatServer.java` Code:*
+**`ChatServer.java` Code: Fix**
 ![Image](chatserver_code.png)
-*`ChatServer.java` Attempt 1:*
+**`ChatServer.java` Attempt 1:**
 ![Image](chatserver_1.png)
-*`ChatServer.java` Attempt 2:*
+**`ChatServer.java` Attempt 2:**
 ![Image](chatserver_2.png)
 
 **Methods Called:**
@@ -14,16 +14,40 @@
 For the request `/add-message?s=Hello&user=Diego`:
 - Relevant Arguments: `URI` object with path `/add-message` and query `s=Hello&user=Diego`.
 - Relevant Field Values:
-  - `chats`: Initially an empty `ArrayList`.
+  - `chats`: Initialized as an empty `ArrayList` that takes in the history of chats.
+  - `parameters`: Empty String `array` that differentiates the `message` and `user` queries.
+  - `type`: Initialized as empty String `array` used to differentiate between user input and message input.
+  - `user`: Initialized as an empty `string` that takes the input in the user field. 
+  - `message`: Initialized as an empty `string` that takes the input in the message field.
+  - `chatMessage`: Initialized as an empty `string` with the concatenated user input and message input in the form  `user + "; " message`.
+  - `response`: Initialized as an empty `string` that allows the `chats` to be printed in new lines.
 - Changes in Field Values:
   - `chats`: Changes from empty to containing one element: "Diego: Hello".
+  - `parameters`: Changes from empty to containing 2 elements: "s=Hello" and "user=Diego".
+  - `type`: The type is initialized in the iteration of `parameters` so it creates 2 distinct instances that turn from empty to containing 2 elements. The first version contains: "s" and "Hello". The second contains: "user" and "Diego". 
+  - `user`: Changes from empty to containing the `string`: "Diego". 
+  - `message`: Changes from empty to containing the `string`: "Hello".
+  - `chatMessage`: Changes from empty to containing the `string`: "Diego: Hello".
+  - `response`: Changes from empty to containing the `string` --"Diego: Hello"-- followed by the movement to the next line.
 
-For the request `/add-message?s=How are you&user=yash`:
+For the request `/add-message?s=World&user=Diego`:
 - Relevant Arguments: `URI` object with path `/add-message` and query `s=world&user=Diego`.
 - Relevant Field Values:
   - `chats`: Contains one element: "Diego: Hello".
+  - `parameters`: Empty String `array` that differentiates the `message` and `user` queries.
+  - `type`: Initialized as empty String `array` used to differentiate between user input and message input.
+  - `user`: Initialized as an empty `string` that takes the input in the user field. 
+  - `message`: Initialized as an empty `string` that takes the input in the message field.
+  - `chatMessage`: Initialized as an empty `string` with the concatenated user input and message input in the form  `user + "; " message`.
+  - `response`: Initialized as an empty `string` that allows the `chats` to be printed in new lines.
 - Changes in Field Values:
-  - `chats`: Changes from containing one element to two elements: "Diego: Hello" and "Diego: World".
+  - `chats`: Changes from empty to containing two elements: "Diego: Hello" and "Diego: World".
+  - `parameters`: Changes from empty to containing 2 elements: "s=World" and "user=Diego".
+  - `type`: The type is initialized in the iteration of `parameters` so it creates 2 distinct instances that turn from empty to containing 2 elements. The first instance contains: "s" and "World". The second contains: "user" and "Diego". 
+  - `user`: Changes from empty to containing the `string`: "Diego". 
+  - `message`: Changes from empty to containing the `string`: "World".
+  - `chatMessage`: Changes from empty to containing the `string`: "Diego: World".
+  - `response`: The type is initialized in the iteration of `chats` so it creates 2 distinct instances that turn from empty to containing 1 element. The first instance contains: "Diego: Hello". The second conatins: "Diego: World."
 
 **Explanation of Field Changes:**
 - The values of the `chats` field change with each request because the `handleRequest` method adds new chat messages to this list based on the incoming requests.
