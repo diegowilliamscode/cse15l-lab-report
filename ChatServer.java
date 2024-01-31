@@ -11,11 +11,11 @@ class Handler implements URLHandler {
             String user = "";
             String message = "";
             for (String parameter : parameters) {
-                String[] keyValue = parameter.split("=");
+                String[] type = parameter.split("=");
                 if (keyValue[0].equals("user")) {
-                    user = keyValue[1];
-                } else if (keyValue[0].equals("s")) {
-                    message = keyValue[1];
+                    user = type[1];
+                } else if (type[0].equals("s")) {
+                    message = type[1];
                 }
             }
             String chatMessage = user + ": " + message;
