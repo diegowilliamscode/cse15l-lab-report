@@ -12,7 +12,7 @@ class Handler implements URLHandler {
             String message = "";
             for (String parameter : parameters) {
                 String[] type = parameter.split("=");
-                if (keyValue[0].equals("user")) {
+                if (type[0].equals("user")) {
                     user = type[1];
                 } else if (type[0].equals("s")) {
                     message = type[1];
