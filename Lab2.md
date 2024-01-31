@@ -1,15 +1,17 @@
-# `ChatServer.java` Code:
+# Lab 2
+
+## `ChatServer.java` Code:
 ![Image](chatserver_code.png)
-# `ChatServer.java` Attempt 1:
+## `ChatServer.java` Attempt 1:
 ![Image](chatserver_1.png)
-# `ChatServer.java` Attempt 2:
+## `ChatServer.java` Attempt 2:
 ![Image](chatserver_2.png)
 
-# Methods Called:
+## Methods Called:
 - In the screenshots, the method called is `handleRequest` in the `Handler` class which interpretes and acts on the `URI` request.
 - The method is called when a request is made to the server with the path `/add-message`.
 
-# Relevant Arguments and Field Values:
+## Relevant Arguments and Field Values:
 
 **For the request `/add-message?s=Hello&user=Diego`:**
 
@@ -51,7 +53,7 @@
   - `chatMessage`: Changes from empty to containing the `string`: "Diego: World".
   - `response`: The type is initialized in the iteration of `chats` so it creates 2 distinct instances that turn from empty to containing 1 element. The first instance contains: "Diego: Hello". The second conatins: "Diego: World."
 
-# Explanation of Field Changes:
+## Explanation of Field Changes:
   - `chats`: Changes with each request because the method `handleRequest` adds a new chat messages to this list based on the incoming requests unless the `URI` request or path is invalid.
   - `parameters`: Changes when the query is split according to the position of "&".
   - `type`: Instance variable that takes the values of `parameters` split by "=".
@@ -60,11 +62,11 @@
   - `chatMessage`: Concatenates `user` + ": " + `message`.
   - `response`: Instance variable that takes the values of `chats` and creates a new line after.
 
-# Path to Private Key
+## Path to Private Key
 ![Image](path_private_key.png)
 
-# Path to Public Key
+## Path to Public Key
 ![Image](path_public_key.png)
 
-# No Password Entry
+## No Password Entry
 ![Image](no_pass_login.png)
