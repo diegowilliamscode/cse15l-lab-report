@@ -1,15 +1,17 @@
-Add Server code
-
+*`ChatServer.java` Code:*
+![Image](chatserver_code.png)
+*`ChatServer.java` Attempt 1:*
 ![Image](chatserver_1.png)
+*`ChatServer.java` Attempt 2:*
 ![Image](chatserver_2.png)
 
 **Methods Called:**
-- The screenshots, the method called is `handleRequest` in the `Handler` class.
-- This method is called whenever a request is made to the server with the path `/add-message`.
+- In the screenshots, the method called is `handleRequest` in the `Handler` class which interpretes and acts on the `URI` request.
+- The method is called when a request is made to the server with the path `/add-message`.
 
 **Relevant Arguments and Field Values:**
 
-For the request `/add-message?s=Hello&user=jpolitz`:
+For the request `/add-message?s=Hello&user=Diego`:
 - Relevant Arguments: `URI` object with path `/add-message` and query `s=Hello&user=Diego`.
 - Relevant Field Values:
   - `chats`: Initially an empty `ArrayList`.
