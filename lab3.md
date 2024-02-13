@@ -18,7 +18,7 @@
     }
 ```
 ### Symptom:
-![Image](ArrayListExample_AvgFail.png)
+![Image](ArrayListExample_ AvgFail.png)
 
 ### The Buggy Code:
 ```
