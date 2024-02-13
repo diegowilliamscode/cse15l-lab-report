@@ -1,22 +1,23 @@
-
-Failure Inducing Input:
+# Lab 3
+## Bugs
+### Failure Inducing Input:
 `@Test
     public void testAverageWithoutLowest_Failure() {
         double[] arr = {4.5, 2.5, 3.5, 2.5};
         assertEquals(3.5, averageWithoutLowest(arr), 0.001);
     }`
 
-Non-Failure Inducing Input:
+### Non-Failure Inducing Input:
 `@Test
     public void testAverageWithoutLowest_NoFailure() {
         double[] arr = {4.5, 2.5, 3.5, 5.5};
         assertEquals(4.166, averageWithoutLowest(arr), 0.001);
     }`
 
-Symptom:
-insert image
+### Symptom:
+![Image](ArrayListExample_AvgFail.png)
 
-The Buggy Code:
+### The Buggy Code:
 ` static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
@@ -31,7 +32,7 @@ The Buggy Code:
   }
 `
 
-Fixed Code:
+### Fixed Code:
 ` static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { 
     return 0.0; 
