@@ -62,7 +62,7 @@ static double averageWithoutLowest(double[] arr) {
 
 In the corrected version, I added a count to keep track of the number of non-lowest numbers in the array (even if multiple are present). Instead of dividing by arr.length - 1, it divides by count to get the correct average.
 
-## `Grep` Command*
+## `Grep` Command
 
 ### `grep -n`
 
