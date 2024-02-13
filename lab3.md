@@ -67,14 +67,14 @@ In the corrected version, I added a count to keep track of the number of non-low
 ### `grep -n`
 
 Display the matched lines and their line numbers.
+```
+[ddw004@ieng6-201]:Media:438$ grep -n "9/11" Terrorist_Attack.txt
+20:still making headlines, known as simply "9/11."
+```
 
-**Input:** `[ddw004@ieng6-201]:Media:438$ grep -n "9/11" Terrorist_Attack.txt`
-
-**Output:** `20:still making headlines, known as simply "9/11."`
-
-**Input:** `[ddw004@ieng6-201]:Media:440$ grep -n "El Paso" *`
-
-**Output:** `Entities_Merge.txt:16:stretches from El Paso to Corpus Christi, Harlingen to Austin.
+```
+[ddw004@ieng6-201]:Media:440$ grep -n "El Paso" *
+Entities_Merge.txt:16:stretches from El Paso to Corpus Christi, Harlingen to Austin.
 Texas_Lawyer.txt:15:Austin south to the Rio Grande Valley and west to El Paso. The
 man_on_national_team.txt:9:Chihuahuita home in South El Paso.
 man_on_national_team.txt:53:El Paso, was one of the friends who pitched in for the trip.
@@ -82,32 +82,34 @@ man_on_national_team.txt:61:meeting, he wore the clothes all El Pasoans recogniz
 man_on_national_team.txt:78:At about the same time, El Paso gallery owner Adair Margo was
 man_on_national_team.txt:79:involved in a Junior League of El Paso project that was documenting
 man_on_national_team.txt:92:on their trips to El Paso.
-[ddw004@ieng6-201]:Media:441$ `
+[ddw004@ieng6-201]:Media:441$
+```
 
 ### `grep -B n`
 
 Prints searched line and n lines before the result.
 
-**Input:** `[ddw004@ieng6-201]:Media:432$ grep -B 2 "grants" Legal_hotline.txt`
-
-**Output:** `The hotline, which is part of Legal Services of Northern
+```
+[ddw004@ieng6-201]:Media:432$ grep -B 2 "grants" Legal_hotline.txtThe hotline, which is part of Legal Services of Northern
 California, was the only California application from 24 submitted
-nationwide for $1.5 million in grants. "It was because of a`
+nationwide for $1.5 million in grants. "It was because of a
+```
 
-**Input:** `[ddw004@ieng6-201]:Media:441$ grep -B 3 "operating budget" Aid_Gets_7_Million.txt`
-
-**Output:** `the office has survived federal funding crises while similar
+```
+[ddw004@ieng6-201]:Media:441$ grep -B 3 "operating budget" Aid_Gets_7_Million.txt
+the office has survived federal funding crises while similar
 organizations have not. In 1995 Congress cut a third of funding to
 Legal Services Corp., which caused Southern Arizona Legal Aid to
-lose roughly a quarter of its $4 million operating budget.`
+lose roughly a quarter of its $4 million operating budget.
+```
 
 ### `grep –i`
 
 Ignores, case for matching
 
-**Input:** `[ddw004@ieng6-201]:Media:435$ grep -i "MedicAid" Anthem_Payout.txt`
-
-**Output:** `Poorest Policyholders could lose Medicaid, other Benefits
+```
+[ddw004@ieng6-201]:Media:435$ grep -i "MedicAid" Anthem_Payout.txt
+Poorest Policyholders could lose Medicaid, other Benefits
 by losing their benefits under Medicaid, food-stamp and other
 TO avoid losing valuable benefits such as a Medicaid-paid spot
 elderly residents in Medicaid nursing-home beds.
@@ -116,28 +118,31 @@ Medicaid threshold is even lower, $1500.
 spokeswoman Lauren Green-Caldwell. But after talking to Medicaid
 eligibility policy for Kentucky Department for Medicaid Services.
 spend the money on. Kentucky advocates and Medicaid officials
-Otherwise, when you report spending to Medicaid - as is required -`
+Otherwise, when you report spending to Medicaid - as is required -
+```
 
-**Input:** `[ddw004@ieng6-201]:Media:444$ grep -i "UniVersITY laW sChooL" *`
-
-**Output:** `Entities_Merge.txt:University Law School to involve students at the University of
-Legal_system_fails_poor.txt:director of clinical programs at Rutgers University Law School in`
+```
+[ddw004@ieng6-201]:Media:444$ grep -i "UniVersITY laW sChooL" *
+Entities_Merge.txt:University Law School to involve students at the University of
+Legal_system_fails_poor.txt:director of clinical programs at Rutgers University Law School in
+```
 
 ### `grep -l`
 
 Displays list of a filenames only.
 
-**Input:** `[ddw004@ieng6-201]:Media:433$ grep -l "findings" *`
-
-**Output:** `Farm_workers.txt
+```
+[ddw004@ieng6-201]:Media:433$ grep -l "findings" *
+Farm_workers.txt
 Legal_system_fails_poor.txt
 Low-income_children.txt
 Survey.txt
-Terrorist_Attack.txt`
+Terrorist_Attack.txt
+```
 
-**Input:** `[ddw004@ieng6-201]:Media:431$ grep -l "University" *`
-
-**Output:** `Assuring_Underprivileged.txt
+```
+[ddw004@ieng6-201]:Media:431$ grep -l "University" *
+Assuring_Underprivileged.txt
 Attorney_gives_his_time.txt
 Avoids_Budget_Cut.txt
 Barnes_Volunteers.txt
@@ -169,4 +174,5 @@ Terrorist_Attack.txt
 Texas_Lawyer.txt
 Texas_Supreme_Court.txt
 Valley_Needing_Legal_Services.txt
-Wilmington_lawyer.txt`
+Wilmington_lawyer.txt
+```
