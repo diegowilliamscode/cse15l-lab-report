@@ -3,18 +3,18 @@
 ### Failure Inducing Input:
 ```
 @Test
-    public void testAverageWithoutLowest_Failure() {
-        double[] arr = {4.5, 2.5, 3.5, 2.5};
-        assertEquals(3.5, averageWithoutLowest(arr), 0.001);
-    }
+  public void averageMultLowest() {
+    double[] input1 = {0.0, 1.0, 2.0, 3.0, 0.0, 6.0, 0.0};
+    assertEquals(2.0, ArrayExamples.averageWithoutLowest(input1), 0.001);
+  }
 ```
 
 ### Non-Failure Inducing Input:
 ```
 @Test
     public void testAverageWithoutLowest_NoFailure() {
-        double[] arr = {4.5, 2.5, 3.5, 5.5};
-        assertEquals(4.166, averageWithoutLowest(arr), 0.001);
+        double[] arr = {1.0, 2.0, 3.0, 6.0};
+        assertEquals(2.0, averageWithoutLowest(arr), 0.001);
     }
 ```
 ### Symptom:
