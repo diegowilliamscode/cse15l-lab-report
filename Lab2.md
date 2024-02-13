@@ -63,10 +63,10 @@
   - `response`: Instance variable that takes the values of `chats` and creates a new line after.
 
 ## Path to Private Key
-![Image](path_private_key.png)
+![Image](Private_Key_Local.png)
 
 ## Path to Public Key
-![Image](path_public_key.png)
+![Image](Public_Key_Authorized.png)
 
 ## No Password Entry
 ![Image](no_pass_login.png)
