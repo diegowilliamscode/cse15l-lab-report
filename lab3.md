@@ -66,7 +66,7 @@ In the corrected version, I added a count to keep track of the number of non-low
 
 ### `grep -n`
 
-Display the matched lines and their line numbers.
+Displays the lines where the match is found and the number of those lines in their respective files, if called in more than one file. 
 ```
 [ddw004@ieng6-201]:Media:438$ grep -n "9/11" Terrorist_Attack.txt
 20:still making headlines, known as simply "9/11."
@@ -82,12 +82,11 @@ man_on_national_team.txt:61:meeting, he wore the clothes all El Pasoans recogniz
 man_on_national_team.txt:78:At about the same time, El Paso gallery owner Adair Margo was
 man_on_national_team.txt:79:involved in a Junior League of El Paso project that was documenting
 man_on_national_team.txt:92:on their trips to El Paso.
-[ddw004@ieng6-201]:Media:441$
 ```
 
 ### `grep -B n`
 
-Prints searched line and n lines before the result.
+Prints the line where the search is found along with n lines before the result. The same principle applies if multiple instances of the search are found.
 
 ```
 [ddw004@ieng6-201]:Media:432$ grep -B 2 "grants" Legal_hotline.txtThe hotline, which is part of Legal Services of Northern
@@ -96,16 +95,32 @@ nationwide for $1.5 million in grants. "It was because of a
 ```
 
 ```
-[ddw004@ieng6-201]:Media:441$ grep -B 3 "operating budget" Aid_Gets_7_Million.txt
-the office has survived federal funding crises while similar
-organizations have not. In 1995 Congress cut a third of funding to
-Legal Services Corp., which caused Southern Arizona Legal Aid to
-lose roughly a quarter of its $4 million operating budget.
+[ddw004@ieng6-201]:Media:463$ grep -B 1 "legal" Annual_Fee.txt
+The Illinois Supreme Court on Friday hiked attorney registration
+fees by $49 a year to boost both legal aid services and support for
+--
+Most of the latest increase -- $42 -- will go to the Lawyers
+Trust Fund of Illinois, which disburses monies to legal aid
+--
+The Lawyers Trust Fund and LAP aim, respectively, to improve
+legal services to the poor to provide equal justice under the law,
+--
+a commitment by the full court, and by attorneys in Illinois, to
+assume responsibility for those unable to afford legal services and
+--
+director of the Lawyers Trust Fund.
+As a result, funding available for the legal aid groups has
+--
+said Friday.
+The Lawyers Trust Fund helps underwrite operations at 34 legal
+--
+for all attorneys in the state how important it is that lawyers be
+made aware of their responsibilities to try to ensure legal
 ```
 
 ### `grep –i`
 
-Ignores, case for matching
+Prints lines where search is found ignoring upper and lower case differences from inputs. Specifies the file if seatrched for in multiple files.
 
 ```
 [ddw004@ieng6-201]:Media:435$ grep -i "MedicAid" Anthem_Payout.txt
@@ -129,7 +144,7 @@ Legal_system_fails_poor.txt:director of clinical programs at Rutgers University 
 
 ### `grep -l`
 
-Displays list of a filenames only.
+Displays list of the filenames where the search is found
 
 ```
 [ddw004@ieng6-201]:Media:433$ grep -l "findings" *
