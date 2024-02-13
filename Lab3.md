@@ -12,7 +12,7 @@
 ### Non-Failure Inducing Input:
 ```
 @Test
-    public void testAverageWithoutLowest_NoFailure() {
+    public void averageOneLowest() {
         double[] arr = {1.0, 2.0, 3.0, 6.0};
         assertEquals(2.0, averageWithoutLowest(arr), 0.001);
     }
