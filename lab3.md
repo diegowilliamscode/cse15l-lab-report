@@ -69,9 +69,11 @@ In the corrected version, I added a count to keep track of the number of non-low
 Display the matched lines and their line numbers.
 
 **Input:** `[ddw004@ieng6-201]:Media:438$ grep -n "9/11" Terrorist_Attack.txt`
+
 **Output:** `20:still making headlines, known as simply "9/11."`
 
 **Input:** `[ddw004@ieng6-201]:Media:440$ grep -n "El Paso" *`
+
 **Output:** `Entities_Merge.txt:16:stretches from El Paso to Corpus Christi, Harlingen to Austin.
 Texas_Lawyer.txt:15:Austin south to the Rio Grande Valley and west to El Paso. The
 man_on_national_team.txt:9:Chihuahuita home in South El Paso.
@@ -87,11 +89,13 @@ man_on_national_team.txt:92:on their trips to El Paso.
 Prints searched line and n lines before the result.
 
 **Input:** `[ddw004@ieng6-201]:Media:432$ grep -B 2 "grants" Legal_hotline.txt`
+
 **Output:** `The hotline, which is part of Legal Services of Northern
 California, was the only California application from 24 submitted
 nationwide for $1.5 million in grants. "It was because of a`
 
 **Input:** `[ddw004@ieng6-201]:Media:441$ grep -B 3 "operating budget" Aid_Gets_7_Million.txt`
+
 **Output:** `the office has survived federal funding crises while similar
 organizations have not. In 1995 Congress cut a third of funding to
 Legal Services Corp., which caused Southern Arizona Legal Aid to
@@ -102,6 +106,7 @@ lose roughly a quarter of its $4 million operating budget.`
 Ignores, case for matching
 
 **Input:** `[ddw004@ieng6-201]:Media:435$ grep -i "MedicAid" Anthem_Payout.txt`
+
 **Output:** `Poorest Policyholders could lose Medicaid, other Benefits
 by losing their benefits under Medicaid, food-stamp and other
 TO avoid losing valuable benefits such as a Medicaid-paid spot
@@ -114,6 +119,7 @@ spend the money on. Kentucky advocates and Medicaid officials
 Otherwise, when you report spending to Medicaid - as is required -`
 
 **Input:** `[ddw004@ieng6-201]:Media:444$ grep -i "UniVersITY laW sChooL" *`
+
 **Output:** `Entities_Merge.txt:University Law School to involve students at the University of
 Legal_system_fails_poor.txt:director of clinical programs at Rutgers University Law School in`
 
@@ -122,6 +128,7 @@ Legal_system_fails_poor.txt:director of clinical programs at Rutgers University 
 Displays list of a filenames only.
 
 **Input:** `[ddw004@ieng6-201]:Media:433$ grep -l "findings" *`
+
 **Output:** `Farm_workers.txt
 Legal_system_fails_poor.txt
 Low-income_children.txt
@@ -129,6 +136,7 @@ Survey.txt
 Terrorist_Attack.txt`
 
 **Input:** `[ddw004@ieng6-201]:Media:431$ grep -l "University" *`
+
 **Output:** `Assuring_Underprivileged.txt
 Attorney_gives_his_time.txt
 Avoids_Budget_Cut.txt
