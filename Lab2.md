@@ -70,3 +70,6 @@
 
 ## No Password Entry
 ![Image](no_pass_login.png)
+
+## What I Learned: 
+I learned about how to set up and deploy web servers and how URLHandler interface can be implemented to process URL requests to create functional servers like the ChatServer. I learned how to access the server from remote computers how to set up ssh to store my id keys for ease of access. 
