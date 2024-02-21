@@ -60,17 +60,18 @@ static double averageWithoutLowest(double[] arr) {
   }
 ```
 
-In the corrected version, I added a count to keep track of the number of non-lowest numbers in the array (even if multiple are present). Instead of dividing by arr.length - 1, it divides by count to get the correct average.
+In the corrected version, I added a count to keep track of the number of non-lowest numbers in the array (even if multiple are present). Instead of dividing by `arr.length - 1`, it divides by count to get the correct average.
 
 ## `Grep` Command
 
 ### `grep -n`
 
-Displays the lines where the match is found and the number of those lines in their respective files, if called in more than one file. 
+Displays the lines where the match is found and the number of those lines and their respective files, if called on more than one file.
 ```
 [ddw004@ieng6-201]:Media:438$ grep -n "9/11" Terrorist_Attack.txt
 20:still making headlines, known as simply "9/11."
 ```
+This example uses the `grep` command to search for the string "9/11" within a file named Terrorist_Attack.txt. The `-n` option is used to display the line number along with the text that matches the search.
 
 ```
 [ddw004@ieng6-201]:Media:440$ grep -n "El Paso" *
@@ -84,15 +85,19 @@ man_on_national_team.txt:79:involved in a Junior League of El Paso project that 
 man_on_national_team.txt:92:on their trips to El Paso.
 ```
 
+This example uses `grep` to search for occurrences of the string "El Paso" in the files in the current directory. The `-n` option for the command outputs the file name, line number, and text for each match.
+
 ### `grep -B n`
 
 Prints the line where the search is found along with n lines before the result. The same principle applies if multiple instances of the search are found.
 
 ```
-[ddw004@ieng6-201]:Media:432$ grep -B 2 "grants" Legal_hotline.txtThe hotline, which is part of Legal Services of Northern
+[ddw004@ieng6-201]:Media:432$ grep -B 2 "grants" Legal_hotline.txt
+The hotline, which is part of Legal Services of Northern
 California, was the only California application from 24 submitted
 nationwide for $1.5 million in grants. "It was because of a
 ```
+This example uses `grep` with the `-B 2` option to search for the term "grants" in the file Legal_hotline.txt, displaying the line containing "grants" and the two lines immediately before it. 
 
 ```
 [ddw004@ieng6-201]:Media:463$ grep -B 1 "legal" Annual_Fee.txt
@@ -117,6 +122,7 @@ The Lawyers Trust Fund helps underwrite operations at 34 legal
 for all attorneys in the state how important it is that lawyers be
 made aware of their responsibilities to try to ensure legal
 ```
+This example uses `grep` with the `-B 1` option to search for the term "legal" in the file Annual_Fee.txt, displaying the all line containing "legal" and the 1 line immediately before every instance of "legal" in the file.
 
 ### `grep –i`
 
@@ -135,12 +141,14 @@ eligibility policy for Kentucky Department for Medicaid Services.
 spend the money on. Kentucky advocates and Medicaid officials
 Otherwise, when you report spending to Medicaid - as is required -
 ```
+This example uses `grep` with the `-i` option to search for the term "MedicAid" in the file Anthem_Payout.txt, displaying the line containing the word "medicaid," or any other way string that contains that word since the command is not case sensitive. 
 
 ```
 [ddw004@ieng6-201]:Media:444$ grep -i "UniVersITY laW sChooL" *
 Entities_Merge.txt:University Law School to involve students at the University of
 Legal_system_fails_poor.txt:director of clinical programs at Rutgers University Law School in
 ```
+This example uses `grep` with the `-i` option to search for the term "UniVersITY laW sChooL" in the current directory, displaying the line and file name containing the words "UniVersITY laW sChooL," or any other way string that contains these words since the command is not case sensitive.
 
 ### `grep -l`
 
@@ -154,6 +162,7 @@ Low-income_children.txt
 Survey.txt
 Terrorist_Attack.txt
 ```
+This example uses `grep` with the `-l` option to search for the term "findings" in the current directory, displaying the file name of any file containing the word "findings." 
 
 ```
 [ddw004@ieng6-201]:Media:431$ grep -l "University" *
@@ -191,4 +200,6 @@ Texas_Supreme_Court.txt
 Valley_Needing_Legal_Services.txt
 Wilmington_lawyer.txt
 ```
+This example uses `grep` with the `-l` option to search for the term "University" in the current directory, displaying the file name of any file containing the word "University." 
+
 Sources: [Geeks for Geeks: grep](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
