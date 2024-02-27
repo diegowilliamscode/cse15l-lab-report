@@ -16,10 +16,15 @@
   
 **Keys Pressed:** `CMD + C`, `CMD + V`, and `L<tab>T<tab><enter>`
 - I proceeded to copy and paste the command to run the tests, but I needed to add the desired file `ListExamplesTests.java`. I pressed `L<tab>` but that only autocompleted to `ListExamples`, so by pressing `T<tab>` it correctly autocompleted to `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. After pressing `<enter>`, I was able to see that one test passed and the other failed.
+  
 ![Image](Tests-Failing.png)
+
 ## Fixing the Error in Vim
+
 ### The Error
+
 ![Image](.png)
+
 ### The Fix
 **Keys Pressed:** `vim L<tab>.<tab>`
 - To find the error, I used the `vim` command to open a the file and edit it. I pressed `L<tab>` so that it would autocomplete; however, it did not autocomplete to `ListExamples.java` only`ListExamples` so I pressed `.<tab>` so that it would fully complete.
@@ -46,6 +51,7 @@
   
 **Keys Pressed:** `<up><up><enter>`
 - I did the same thing to retrieve the code to run the tests `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`.
+  
 ![Image](Tests-Passing.png)
 
 ## Git Commands
@@ -62,6 +68,8 @@
 - I used this as the commit message.
   
 ![Image](Git-Commit-Confirmation.png)
+
 **Keys Pressed:** `git push`
 - I could have used `git push origin main` but I found this worked and used less characters. This command pushes the changes out to the repository.
+  
 ![Image](Git-Push.png)
