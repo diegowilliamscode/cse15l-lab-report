@@ -66,8 +66,8 @@
 **Keys Pressed:** `a`
 - This command allows me to insert text into the commit.
   
-**Keys Pressed:** `Fix ListExamples.java`
-- I used this as the commit message.
+**Keys Pressed:** `Fix ListExamples.java<esc>`
+- I used this as the commit message and `<esc>` is necessary to leave the modification mode.
   
 ![Image](Git-Commit-Confirmation.png)
 
