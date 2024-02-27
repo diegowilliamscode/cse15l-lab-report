@@ -18,7 +18,8 @@
 - I proceeded to copy and paste the command to run the tests, but I needed to add the desired file `ListExamplesTests.java`. I pressed `L<tab>` but that only autocompleted to `ListExamples`, so by pressing `T<tab>` it correctly autocompleted to `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. After pressing `<enter>`, I was able to see that one test passed and the other failed.
   
 ![Image](Tests-Failing.png)
-
+(Used Edstem because ieng6 would not compile
+)
 ## Fixing the Error in Vim
 
 ### The Error
