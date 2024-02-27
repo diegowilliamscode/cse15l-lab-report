@@ -25,7 +25,7 @@
 ### The Error
 
 ![Image](Error.png)
-**Error:** The error is that `index1` in line 44 must be changed for `index2`.
+**Error:** The error is that `index1` in line 44 must be changed for `index2` so that the function merges the correct index. Fixing this will allow the tests to pass.
 
 ### The Fix
 **Keys Pressed:** `vim L<tab>.<tab>`
