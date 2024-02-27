@@ -25,6 +25,7 @@
 ### The Error
 
 ![Image](Error.png)
+**Error:** The error is that `index1` in line 44 must be changed for `index2`.
 
 ### The Fix
 **Keys Pressed:** `vim L<tab>.<tab>`
