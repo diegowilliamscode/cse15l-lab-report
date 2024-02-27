@@ -24,7 +24,7 @@
 
 ### The Error
 
-![Image](.png)
+![Image](Error.png)
 
 ### The Fix
 **Keys Pressed:** `vim L<tab>.<tab>`
