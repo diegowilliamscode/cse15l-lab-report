@@ -44,10 +44,9 @@
 - The "2" was the data that was needed to replace `index1` with `index2`.
   
 **Keys Pressed:** `:wq`
-- These keys save the changes made and exit the Vim editor.
+- These keys save the changes made and exit the Vim editor. The `<esc>` key does not need to be pressed because the editor enters normal mode after recieving the input with which it will make the replacement. 
   
 ### Checking
-
 **Keys Pressed:** `<up><up><enter>`
 - Since the compiling code `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` was already in my history, I moved up twice to find it.
   
