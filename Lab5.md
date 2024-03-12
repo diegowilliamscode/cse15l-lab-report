@@ -1,20 +1,23 @@
 ### Lab 5
-## Student Submission
+## Student and Tutor
+# Student:
 Hello, I have ran into an unfamiliar error. I have modified my `ChatServer.java` but I do not understand the error message especially since my code is psassing the other tests.
-** These are my test results: **
+**These are my test results:**
 ![Image](lab5_testresults.png)
 
-** This is the bash script I ran: ** 
+**This is the bash script I ran:** 
+`test.sh`
 ![Image](lab5_bashtest.png)
 
-** These images show the file organization: ** 
+**These images show my file organization:** 
 ![Image](lab5_allfiles.png)
 ![Image](lab5_subdirectory.png)
 
-** This is my tester: ** 
+**This is my tester:** 
+`SemanticAnalysisTests.java`
 ![Image](lab5_semanticanalysistests.png)
 
-** This is my ChatServer.java (Would have taken 3 images so I copied and pasted): **
+**This is my ChatServer.java (Would have taken 3 images so I copied and pasted):**
 `ChatServer.java`
 ```
 import java.io.IOException;
@@ -131,12 +134,35 @@ class ChatServer {
   }
 }
 ```
-## Tutor Clarification 
-No problem. Good job sending all the files necessary for debugging. Can you 
+# Tutor:
+No problem. Good job sending all the files necessary for debugging. This does look complicated. First, make sure `chat-server-pro` is the working directory. Then, enter jdb using `jdb -classpath .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore SemanticAnalysisHandlerTests`. Once you are in jbd mode, stop at line 52 since the error seems to occur on that line. Do this by entering `stop at SemanticAnalysisHandlerTests:52`. Then run the tester simply by entering `run`. After the jdb stops at the breakpoint can you enter `print url1` and then, `print input1`. Let me know what this returns to help you solve this bug. 
 
-
-## Student Modification
+# Student: 
+Okay. I did what you told me. Here is what the commands you told me to input returned. 
 ![Image](lab5_.png)
-## Solution
+
+# Tutor:
+I think I know what your problem is. Try entering vim using `vim SemanaticAnalysisHandlerTests.java` and deleting the space between your emojis (using `x`). Make sure to save this using `:wq`, then run the tests again with `bash test.sh` to see what happens.
+![Image](lab5_.png)
+
+# Student:
+Okay, will do. How do I leave jdb mode though?
+
+# Tutor:
+Enter `quit`.
+
+# Student 
+Like this?
+![Image](lab5_.png)
+
+# Tutor
+Exactly.
+
+# Student:
+Let's go! It worked. What was the problem?
+![Image](lab5_.png)
+
+# Tutor:
+The issue you're encountering with spaces between emojis when handling requests relates to how URIs are structured and encoded. URIs use encoding to handle special characters, including spaces. Spaces in a URI are typically encoded as %20 in query parameters. This means that if a message contains an encoded space between emojis, it will not be correctly split or decoded when directly handled by your code.
 
 ## Reflection
