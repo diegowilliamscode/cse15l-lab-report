@@ -5,7 +5,9 @@
 
 **Keys Pressed:** `ssh ddw004@ieng6.ucsd.edu`
 - First, I logged into my `ieng6` acoount using the command `ssh ddw004@ieng6.ucsd.edu` on my personal computer that has my account keys saved already.
-  
+
+![Image](git_clone_lab4.png)
+
 **Keys Pressed:** `git clone git@github.com:diegowilliamscode/lab7-labreport4.git`
 - To download the repository from GitHub, I entered the command `git clone git@github.com:diegowilliamscode/lab7-labreport4.git`.
 
@@ -19,7 +21,7 @@
 **Keys Pressed:** `CMD + C`, `CMD + V`, and `L<tab>T<tab><enter>`
 - I proceeded to copy and paste the command to run the tests, but I needed to add the desired file `ListExamplesTests.java`. I pressed `L<tab>` but that only autocompleted to `ListExamples`, so by pressing `T<tab>` it correctly autocompleted to `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. After pressing `<enter>`, I was able to see that one test passed and the other failed.
   
-![Image](Tests-Failing.png)
+![Image](step_5_lab4.png)
 (Used Edstem because ieng6 would not compile
 )
 ## Fixing the Error in Vim
