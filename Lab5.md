@@ -1,10 +1,21 @@
 ### Lab 5
 ## Student Submission
+Hello, I have ran into an unfamiliar error. I have modified my `ChatServer.java` but I do not understand the error message especially since my code is psassing the other tests.
+** These are my test results: **
 ![Image](lab5_testresults.png)
+
+** This is the bash script I ran: ** 
+![Image](lab5_bashtest.png)
+
+** These images show the file organization: ** 
 ![Image](lab5_allfiles.png)
 ![Image](lab5_subdirectory.png)
-![Image](lab5_bashtest.png)
+
+** This is my tester: ** 
 ![Image](lab5_semanticanalysistests.png)
+
+** This is my ChatServer.java (Would have taken 3 images so I copied and pasted): **
+`ChatServer.java`
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -120,8 +131,9 @@ class ChatServer {
   }
 }
 ```
-
 ## Tutor Clarification 
+No problem. Good job sending all the files necessary for debugging. Can you 
+
 
 ## Student Modification
 ![Image](lab5_.png)
