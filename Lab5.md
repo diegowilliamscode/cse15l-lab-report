@@ -19,7 +19,9 @@ Hello, I have ran into an unfamiliar error. I have modified my `ChatServer.java`
 ![Image](lab5_subdirectory.png)
 
 **This is my tester:** 
+
 `SemanticAnalysisTests.java`
+
 ![Image](lab5_semanticanalysistests.png)
 
 **This is my ChatServer.java (Would have taken 3 images so I copied and pasted):**
@@ -169,9 +171,10 @@ Exactly.
 ### Student:
 Let's go! It worked. What was the problem?
 
-![Image](lab5_alltestspassed.png)
+![Image](lab5_testspassed.png)
 
 ### Tutor:
 The issue you're encountering with spaces between emojis when handling requests relates to how URIs are structured and encoded. URIs use encoding to handle special characters, including spaces. Spaces in a URI are typically encoded as %20 in query parameters. This means that if a message contains an encoded space between emojis, it will not be correctly split or decoded when directly handled by your code.
 
 ## Reflection
+I learned a lot of helpful tools I will keep in my arsenal for years to come. I learned how to actually used git, jbd, and vim which are skills I did not think I needed but are so helpful and vital when it comes to programming. Even the little things, like vital commands (grep,mkdir,rm) and markdown have helped me elevate my programming to another level. After this class, I plan on using my skills, not only in the workplace, but also on personal projects like the home server I plan on making. 
