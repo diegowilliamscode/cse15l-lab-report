@@ -4,13 +4,17 @@
 Hello, I have ran into an unfamiliar error. I have modified my `ChatServer.java` but I do not understand the error message especially since my code is psassing the other tests.
 
 **These are my test results:**
+
 ![Image](lab5_testresults.png)
 
 **This is the bash script I ran:** 
+
 `test.sh`
+
 ![Image](lab5_bashtest.png)
 
 **These images show my file organization:** 
+
 ![Image](lab5_allfiles.png)
 ![Image](lab5_subdirectory.png)
 
@@ -19,7 +23,9 @@ Hello, I have ran into an unfamiliar error. I have modified my `ChatServer.java`
 ![Image](lab5_semanticanalysistests.png)
 
 **This is my ChatServer.java (Would have taken 3 images so I copied and pasted):**
+
 `ChatServer.java`
+
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -140,6 +146,7 @@ No problem. Good job sending all the files necessary for debugging. This does lo
 
 ### Student: 
 Okay. I did what you told me. Here is what the commands you told me to input returned. 
+
 ![Image](lab5_jbdoutput.png)
 
 ### Tutor:
@@ -153,6 +160,7 @@ Enter `quit`.
 
 ### Student 
 Like this?
+
 ![Image](lab5_fixedtest.png)
 
 ### Tutor
@@ -160,6 +168,7 @@ Exactly.
 
 ### Student:
 Let's go! It worked. What was the problem?
+
 ![Image](lab5_alltestspassed.png)
 
 ### Tutor:
