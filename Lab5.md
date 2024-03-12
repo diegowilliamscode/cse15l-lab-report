@@ -1,6 +1,6 @@
-### Lab 5
+# Lab 5
 ## Student and Tutor
-# Student:
+### Student:
 Hello, I have ran into an unfamiliar error. I have modified my `ChatServer.java` but I do not understand the error message especially since my code is psassing the other tests.
 **These are my test results:**
 ![Image](lab5_testresults.png)
@@ -134,35 +134,34 @@ class ChatServer {
   }
 }
 ```
-# Tutor:
+### Tutor:
 No problem. Good job sending all the files necessary for debugging. This does look complicated. First, make sure `chat-server-pro` is the working directory. Then, enter jdb using `jdb -classpath .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore SemanticAnalysisHandlerTests`. Once you are in jbd mode, stop at line 52 since the error seems to occur on that line. Do this by entering `stop at SemanticAnalysisHandlerTests:52`. Then run the tester simply by entering `run`. After the jdb stops at the breakpoint can you enter `print url1` and then, `print input1`. Let me know what this returns to help you solve this bug. 
 
-# Student: 
+### Student: 
 Okay. I did what you told me. Here is what the commands you told me to input returned. 
-![Image](lab5_.png)
+![Image](lab5_jbdoutput.png)
 
-# Tutor:
+### Tutor:
 I think I know what your problem is. Try entering vim using `vim SemanaticAnalysisHandlerTests.java` and deleting the space between your emojis (using `x`). Make sure to save this using `:wq`, then run the tests again with `bash test.sh` to see what happens.
-![Image](lab5_.png)
 
-# Student:
+### Student:
 Okay, will do. How do I leave jdb mode though?
 
-# Tutor:
+### Tutor:
 Enter `quit`.
 
-# Student 
+### Student 
 Like this?
-![Image](lab5_.png)
+![Image](lab5_fixedtest.png)
 
-# Tutor
+### Tutor
 Exactly.
 
-# Student:
+### Student:
 Let's go! It worked. What was the problem?
-![Image](lab5_.png)
+![Image](lab5_alltestspassed.png)
 
-# Tutor:
+### Tutor:
 The issue you're encountering with spaces between emojis when handling requests relates to how URIs are structured and encoded. URIs use encoding to handle special characters, including spaces. Spaces in a URI are typically encoded as %20 in query parameters. This means that if a message contains an encoded space between emojis, it will not be correctly split or decoded when directly handled by your code.
 
 ## Reflection
