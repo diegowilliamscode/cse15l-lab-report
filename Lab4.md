@@ -10,8 +10,8 @@
 - To download the repository from GitHub, I entered the command `git clone git@github.com:diegowilliamscode/lab7-labreport4.git`.
 
 ## Test Run
-**Keys Pressed:** `cd lab7-labreport4`
-- I utilized the `cd lab7-labreport4<enter>` command to change my current directory to `/home/linux/ieng6/cs15lwi24/ddw004/lab7-labreport4`.
+**Keys Pressed:** `cd lab7-labreport4 <enter>`
+- I utilized the `cd lab7-labreport4 <enter>` command to change my current directory to `/home/linux/ieng6/cs15lwi24/ddw004/lab7-labreport4`.
   
 **Keys Pressed:** `CMD + C`, `CMD + V`, and `<enter>`
 - Then I copied and pasted the commands `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` to compile all the java files in the current directory.
