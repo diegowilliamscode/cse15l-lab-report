@@ -12,6 +12,9 @@
 - To download the repository from GitHub, I entered the command `git clone git@github.com:diegowilliamscode/lab7-labreport4.git`.
 
 ## Test Run
+
+![Image](step_5_lab4.png)
+
 **Keys Pressed:** `cd lab7-labreport4 <enter>`
 - I utilized the `cd lab7-labreport4 <enter>` command to change my current directory to `/home/linux/ieng6/cs15lwi24/ddw004/lab7-labreport4`.
   
@@ -21,9 +24,7 @@
 **Keys Pressed:** `CMD + C`, `CMD + V`, and `L<tab>T<tab><enter>`
 - I proceeded to copy and paste the command to run the tests, but I needed to add the desired file `ListExamplesTests.java`. I pressed `L<tab>` but that only autocompleted to `ListExamples`, so by pressing `T<tab>` it correctly autocompleted to `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. After pressing `<enter>`, I was able to see that one test passed and the other failed.
   
-![Image](step_5_lab4.png)
-(Used Edstem because ieng6 would not compile
-)
+
 ## Fixing the Error in Vim
 
 ### The Error
