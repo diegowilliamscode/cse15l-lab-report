@@ -2,6 +2,7 @@
 ## Student and Tutor
 ### Student:
 Hello, I have ran into an unfamiliar error. I have modified my `ChatServer.java` but I do not understand the error message especially since my code is psassing the other tests.
+
 **These are my test results:**
 ![Image](lab5_testresults.png)
 
