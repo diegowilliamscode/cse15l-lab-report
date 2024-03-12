@@ -1,6 +1,8 @@
 # Lab 4
 ## SSH
 
+![Image](no_pass_login.png)
+
 **Keys Pressed:** `ssh ddw004@ieng6.ucsd.edu`
 - First, I logged into my `ieng6` acoount using the command `ssh ddw004@ieng6.ucsd.edu` on my personal computer that has my account keys saved already.
   
